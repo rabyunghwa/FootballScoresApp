@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:background="@drawable/list_item">
+    <FrameLayout
+        android:id="@+id/widget"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:background="@color/orange04">
+        <ImageView
+            android:id="@+id/match_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:paddingTop="5dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--<ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/content_desription_home_crest"
+                android:layerType="software"
+                android:layout_gravity="center"
+                tools:src="@drawable/no_icon"
+                android:id="@+id/home_crest_widget"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/TeamNames"
+                android:gravity="center"
+                android:contentDescription="@string/content_desription_home_name"
+                tools:text="@string/test_text"
+                android:id="@+id/home_name"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:contentDescription="@string/content_desription_score"
+                tools:text="@string/test_text"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/Score"
+                android:id="@+id/widget_score_textview"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                tools:text="@string/test_text"
+                android:contentDescription="@string/content_desription_date"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/widget_date_textview"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--<ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/content_desription_away_crest"
+                android:layerType="software"
+                tools:src="@drawable/no_icon"
+                android:id="@+id/away_crest_widget"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                tools:text="@string/test_text"
+                android:contentDescription="@string/content_desription_away_crest"
+                android:textSize="@dimen/TeamNames"
+                android:id="@+id/away_name"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/league_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/content_desription_league_name"
+            android:gravity="center"
+            tools:text="@string/test_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/League" />
+
+        <TextView
+            android:id="@+id/matchday_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:contentDescription="@string/content_desription_match_day"
+            tools:text="@string/test_text"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/League" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

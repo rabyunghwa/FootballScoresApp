@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minWidth="@dimen/widget_football_default_width"
+    android:minHeight="@dimen/widget_football_default_height"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/football_widget"
+    android:previewImage="@drawable/widget_preview_today"
+    android:minResizeHeight="@dimen/widget_football_default_height"
+    android:minResizeWidth="@dimen/widget_football_min_resize_width"
+    android:resizeMode="horizontal"
+    tools:ignore="UnusedAttribute" />
