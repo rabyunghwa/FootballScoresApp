@@ -43,14 +43,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:drawableLeft="@android:drawable/ic_menu_share"
-            android:drawableStart="@android:drawable/ic_menu_share"
+            android:textColor="@android:color/white"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/ic_share_white_24dp"
+            android:drawableStart="@drawable/ic_share_white_24dp"
             android:gravity="center"
-            android:paddingLeft="120dp"
-            android:paddingStart="120dp"
+            android:paddingLeft="60dp"
+            android:paddingStart="60dp"
             android:contentDescription="@string/content_desription_share_button"
-            android:paddingRight="120dp"
-            android:paddingEnd="120dp"
+            android:paddingRight="60dp"
+            android:paddingEnd="60dp"
             android:text="@string/share_text" />
     </FrameLayout>
 

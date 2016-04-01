@@ -337,17 +337,27 @@ public class MyFetchService extends IntentService {
                     match_day = match_data.getString(MATCH_DAY);
                     ContentValues match_values = new ContentValues();
                     match_values.put(DatabaseContract.scores_table.MATCH_ID, match_id);
+                    LogUtil.log_i("info", "my fetch service inserting match id: " + match_id);
                     match_values.put(DatabaseContract.scores_table.DATE_COL, mDate);
                     LogUtil.log_i("info", "my fetch service inserting date string: " + mDate);
                     match_values.put(DatabaseContract.scores_table.TIME_COL, mTime);
+                    LogUtil.log_i("info", "my fetch service inserting time: " + mTime);
                     match_values.put(DatabaseContract.scores_table.HOME_COL, Home);
+                    LogUtil.log_i("info", "my fetch service inserting home: " + Home);
                     match_values.put(DatabaseContract.scores_table.AWAY_COL, Away);
+                    LogUtil.log_i("info", "my fetch service inserting away: " + Away);
                     match_values.put(DatabaseContract.scores_table.HOME_GOALS_COL, Home_goals);
+                    LogUtil.log_i("info", "my fetch service inserting home goals: " + Home_goals);
                     match_values.put(DatabaseContract.scores_table.AWAY_GOALS_COL, Away_goals);
+                    LogUtil.log_i("info", "my fetch service inserting away goals: " + Away_goals);
                     match_values.put(DatabaseContract.scores_table.LEAGUE_COL, League);
+                    LogUtil.log_i("info", "my fetch service inserting league: " + League);
                     match_values.put(DatabaseContract.scores_table.MATCH_DAY, match_day);
+                    LogUtil.log_i("info", "my fetch service inserting match day: " + match_day);
                     match_values.put(DatabaseContract.scores_table.CREST_PATH_HOME, pathLogoHome);
+                    LogUtil.log_i("info", "my fetch service inserting crest path home: " + pathLogoHome);
                     match_values.put(DatabaseContract.scores_table.CREST_PATH_AWAY, pathLogoAway);
+                    LogUtil.log_i("info", "my fetch service inserting crest path away: " + pathLogoAway);
 
                     values.add(match_values);
                 }

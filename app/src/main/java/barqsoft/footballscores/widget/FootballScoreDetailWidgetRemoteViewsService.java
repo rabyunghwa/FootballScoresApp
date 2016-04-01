@@ -143,6 +143,22 @@ public class FootballScoreDetailWidgetRemoteViewsService extends RemoteViewsServ
                 //views.setImageViewResource(R.id.home_crest_detail, homeCrestResId);
                 //views.setImageViewResource(R.id.away_crest_detail, awayCrestResId);
 
+//                Bitmap theBitmap = null;
+//                try {
+//                    theBitmap = Glide.
+//                            with(getApplicationContext()).
+//                            load(data.getString()).
+//                            asBitmap().
+//                            into(100, 100). // Width and height
+//                            get();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                } catch (ExecutionException e) {
+//                    e.printStackTrace();
+//                }
+//
+//                views.setImageViewBitmap(R.id.home_crest_widget, theBitmap);
+
                 views.setTextViewText(R.id.widget_date_textview_detail, time);
                 //views.setTextViewText(R.id.match_description, getDayName(MyApplication.applicationContext, System.currentTimeMillis()+((position-2))*86400000));
                 views.setTextViewText(R.id.match_description, date);
@@ -177,38 +193,4 @@ public class FootballScoreDetailWidgetRemoteViewsService extends RemoteViewsServ
         };
     }
 
-//    private class DownloadImageTask extends AsyncTask<String, Void, Drawable> {
-//
-//        @Override
-//        protected Drawable doInBackground(String... params) {
-//            try {
-//                String urldisplay = params[0];
-//                final URL url = new URL(urldisplay);
-//                LogUtil.log_i("info", "football detail widget url: " + urldisplay);
-//                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-//                InputStream inputStream = urlConnection.getInputStream();
-//                SVG svg = SVGParser.getSVGFromInputStream(inputStream, 0, 0);
-//                return svg.createPictureDrawable();
-//            } catch (Exception e) {
-//                Log.e("MainActivity", e.getMessage(), e);
-//            }
-//
-//            return null;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(Drawable drawable) {
-//            // Update the view
-//            //imageView.setImageDrawable(drawable);
-//            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
-//            Bitmap bitmap = null;
-//            if (bitmapDrawable != null) {
-//                if(bitmapDrawable.getBitmap() != null) {
-//                    bitmap = bitmapDrawable.getBitmap();
-//                }
-//                views.setImageViewBitmap(R.id.home_crest_detail, bitmap);
-//            }
-//
-//        }
-//    }
 }

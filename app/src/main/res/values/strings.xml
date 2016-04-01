@@ -56,5 +56,6 @@
 
     <!-- empty widget data -->
     <string name="empty_score_list">No score list available.</string>
+    <string name="no_data_available">No data available</string>
 
 </resources>

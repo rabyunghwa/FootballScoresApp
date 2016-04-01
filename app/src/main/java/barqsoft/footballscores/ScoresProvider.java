@@ -39,8 +39,7 @@ public class ScoresProvider extends ContentProvider
         return matcher;
     }
 
-    private int match_uri(Uri uri)
-    {
+    private int match_uri(Uri uri) {
         String link = uri.toString();
         {
            if(link.contentEquals(DatabaseContract.CONTENT_URI.toString()))

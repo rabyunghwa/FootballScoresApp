@@ -60,19 +60,6 @@ public class FootballScoreWidgetIntentService extends IntentService {
     private String[] fragmentdate = new String[1];
     private RemoteViews views;
 
-//    private Handler mHandler = new Handler(Looper.getMainLooper()) {
-//        @Override
-//        public void handleMessage(Message msg) {
-//            switch (msg.what) {
-//                case 0:
-//                    String crestPathHomeMessage = (String) msg.obj;
-//                    DownloadImageTask task = new DownloadImageTask();
-//                    task.execute(crestPathHomeMessage);
-//                    break;
-//            }
-//        }
-//    };
-
 
     public FootballScoreWidgetIntentService() {
         super("FootballScoreWidgetIntentService");
@@ -172,42 +159,5 @@ public class FootballScoreWidgetIntentService extends IntentService {
     private void setRemoteContentDescription(RemoteViews views, String description) {
         views.setContentDescription(R.id.match_description, description);
     }
-
-//    private class DownloadImageTask extends AsyncTask<String, Void, Drawable> {
-//
-//        @Override
-//        protected Drawable doInBackground(String... params) {
-//            try {
-//                String urldisplay = params[0];
-//                final URL url = new URL(urldisplay);
-//                LogUtil.log_i("info", "football detail widget url: " + urldisplay);
-//                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-//                InputStream inputStream = urlConnection.getInputStream();
-//                if (inputStream != null) {
-//                    SVG svg = SVGParser.getSVGFromInputStream(inputStream, 0, 0);
-//                    return svg.createPictureDrawable();
-//                }
-//
-//            } catch (Exception e) {
-//                Log.e("MainActivity", e.getMessage(), e);
-//            }
-//
-//            return null;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(Drawable drawable) {
-//            // Update the view
-//            BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
-//            Bitmap bitmap;
-//            if (bitmapDrawable != null) {
-//                if(bitmapDrawable.getBitmap() != null) {
-//                    bitmap = bitmapDrawable.getBitmap();
-//                    views.setImageViewBitmap(R.id.home_crest_widget, bitmap);
-//                }
-//            }
-//
-//        }
-//    }
 
 }

@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="8dp"
     android:elevation="4dp"
     android:background="@drawable/list_item">
     <LinearLayout
@@ -57,7 +58,7 @@
                 android:contentDescription="@string/content_desription_date"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:id="@+id/data_textview"/>
+                android:id="@+id/date_textview"/>
 
         </LinearLayout>
         <LinearLayout
